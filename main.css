@@ -1,0 +1,125 @@
+* {box-sizing: border-box;margin: 0;padding: 0;}
+html {font-size: 16px;}
+.hidden {display: none !important;}
+html , body {min-height:100%;font-family: 'Lato', sans-serif;line-height: 1.5;color: #043853;}
+body {height: 100%;overflow-x: hidden;font-weight: 400;}
+.clear {clear: both;}
+.text-center {text-align: center;}
+.text-left {text-align: left;}
+
+/*LAYOUT*/
+.dep-with-panel , .card , .flex-li , .nav , .card-title, .card-img{display: flex;}
+.card , .flex-li{flex-wrap: wrap;}
+
+.nav-tabs , .card-kind{flex: 40%;max-width: 40%;order: 1;}
+.details1 , .card-arrow{flex: 10%;max-width: 10%;order: 3;}
+.details2 , .card-info{flex: 50%;max-width: 50%;order: 2;}
+.pano {flex: 100%;max-width: 100%;order: 4;}
+.details1 , .card-arrow {align-self: center;}
+
+.flex-li , .card-title{
+	height: 40px;
+	justify-content: center;
+  align-items: center;
+}
+
+.flex-li li {flex: 25%;max-width: 25%;}
+.card-img {flex: 40%; max-width: 40%;}
+.card-accord {flex: 60%; max-width: 60%;}
+
+@media only screen and (max-width: 900px) {
+  .nav-tabs {flex: 100%;max-width: 100%;}
+  .details1 , .details2{display: none;}
+  .card-kind {flex: 90%;max-width: 90%;}
+  .card-arrow{order: 2;}
+  .card-info{flex: 100%;max-width: 100%;order: 3;text-align: left;display: flex;}
+  .card-info .flex-li li {flex: 100%;max-width: 100%;}
+  .card-info .flex-li , .card-kind .card-title {height: 100%;}
+}
+
+@media only screen and (min-width: 901px) {
+	.card-hide {display: none;}
+}
+
+.openbtn{background-color: transparent;outline: none; border: none; color: #fff; cursor: pointer;width:100%;}
+.container {width:100%;margin-left: auto;margin-right: auto;}
+
+.heading {padding: 0 1rem;margin-bottom: 3em;}
+.heading , .heading2{border-left: 3px solid #91273f;}
+
+a:link , a:visited , a:hover , a.active {text-decoration: none; outline: none;}
+h1 {font-size: 2.3rem;}
+h2 {margin-left: 1rem;}
+p {font-size: 1rem;}
+.nav-link {
+	 color: #043853;
+    display: block;
+    height: 100%;
+    width: auto;
+    padding: 1.2rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    transition: all 0.2s ease-in 0s;
+}
+.nav-link:hover , .nav .nav-link.active , .accordion , .card-arrow{color: #fff;}
+.nav-link:hover {background-color: #043853;}
+.nav .nav-link.active {
+    background-color: #2d9dd8;
+}
+/*Lists*/
+.tog li {list-style: none;}
+.details2 , .card-info , .card-kind{padding: .8rem;}
+
+/*COLORS*/
+.card {background-color: #004262;}
+.details2 , .card-title , .details1, .card-arrow , .accordion{font-size: 1.1rem;font-weight: 700;}
+
+.method-container {margin-top: 1rem;border: 1px solid rgba(0,0,0,.125);border-radius: .25rem;}
+.pano {padding: 1rem 3rem;background-color: #fff;}
+.card-title img {max-width: 100%; height: auto;}
+.accordion {background-color: transparent; border: none;margin-left: .8rem;}
+.card-arrow.active {transform: rotate(180deg);transition: all 0.3s}
+
+@media only screen and (max-width: 575px) {
+.container {padding: .8rem;}
+}
+@media only screen and (min-width: 576px) {
+  .container {padding: 1rem;}
+}
+@media only screen and (min-width: 768px) {
+  .container {max-width: 720px;}
+}
+@media only screen and (max-width: 900px) {
+	html {font-size: 14px;}
+  .container {max-width: 860px;}
+  .pano , .card-info {padding: .8rem 2rem;}
+  .card-info {background-color: #fff;}
+}
+@media only screen and (min-width: 901px) {
+	html {font-size: 14px;}
+	.container {max-width: 890px;}
+  .flex-li{border-left: 3px solid #91273f;}
+  .details2 .flex-li{border-left: 3px solid transparent;}
+  .card-info {color: #fff;}
+}
+@media only screen and (min-width: 992px) {
+	html {font-size: 16px;}
+  .container {max-width: 960px;}
+}
+@media only screen and (min-width: 1200px) {
+  .container {max-width: 1140px;}
+}
+@media only screen and (min-width: 1500px) {
+	html {font-size: 17px;}
+  .container {max-width: 1400px;}
+}
+
+
+.pano.closed{height:0; transition: all .3s; overflow: hidden;padding-top: 0; padding-bottom: 0}
+.pano.opened{height:auto; transition: all .3s; }
+
+
+@media only screen and (max-width: 900px) {
+.Iclosed{height:0; transition: all .3s; overflow: hidden;padding-top: 0; padding-bottom: 0}
+.Iopened{height:auto; transition: all .3s; }
+}
