@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="author" content="Zorica Mitrovic">
+      <meta name="description" content='Coding test for candidates'>
+      <title>OGaming</title>
+      <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="main.css">
+   </head>
+   <body>
+      <div class="container">
+         <div class="heading">
+            <h1>Payment Methods</h1>
+         </div>
+         <div class="method-container">
+            <div class="dep-with-panel text-center">
+               <div class="nav-tabs">
+                  <ul class="tog nav">
+                     <li>
+                        <a class="nav-link active" href="#" id="depositsBtn" onclick="openDeposits()" >Deposits</a>
+                     </li>
+                     <li>
+                        <a class="nav-link" href="#" onclick="openWithdrawal()" id="withdrawalBtn">Withdrawal</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="details1">
+                  Details
+               </div>
+               <div class="details2">
+                  <ul class="tog flex-li">
+                     <li>Fee</li>
+                     <li>Process Time</li>
+                     <li>Min</li>
+                     <li>Max</li>
+                  </ul>
+               </div>
+            </div>
+            <!-- PAYMENTS -->
+            <div id="deposits" class="tab-pane visible">
+               <div class="card text-center">
+                  <div class="card-kind text-left">
+                     <div class="card-title">
+                        <div class="card-img"><img src=" visa.png" alt="Visa"></div>
+                        <div class="card-accord">
+                           <button class="accordion">Debit & Credit Cards</button>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card-arrow"><button class="openbtn"  onclick="togglePanel('pano-1');">▼</button></div>
+                  <div class="card-info Iclosed" id="Ipano-1">
+                     <ul class="tog flex-li card-hide">
+                        <li>
+                           <span class="card-hide">Fee</span>
+                        </li>
+                        <li>
+                           <span class="card-hide">Process Time</span>
+                        </li>
+                        <li>
+                           <span class="card-hide">Min</span>
+                        </li>
+                        <li>
+                           <span class="card-hide">Max</span>
+                        </li>
+                     </ul>
+                     <ul class="tog flex-li">
+                        <li>
+                           <span>Free</span>
+                        </li>
+                        <li>
+                           <span>Instant</span>
+                        </li>
+                        <li>
+                           <span>€15</span>
+                        </li>
+                        <li>
+                           <span>€50,000</span>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="pano text-left closed"  id="pano-1">
+                     <div class="heading2">
+                        <h2>Debit & Credit Cards</h2>
+                     </div>
+                     <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting
+                     </p>
+                  </div>
+               </div>
+     
+              
+               <div class="card text-center">
+                  <div class="card-kind text-left">
+                     <div class="card-title">
+                        <div class="card-img"><img src=" sofort.png" alt="Sofortüberweisung"></div>
+                        <div class="card-accord">
+                           <button class="accordion">Sofortüberweisung</button>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card-arrow"><button class="openbtn"  onclick="togglePanel('pano-2');">▼</button></div>
+                  <div class="card-info Iclosed" id="Ipano-2">
+                     <ul class="tog flex-li card-hide">
+                        <li>
+                           <span class="card-hide">Fee</span>
+                        </li>
+                        <li>
+                           <span class="card-hide">Process Time</span>
+                        </li>
+                        <li>
+                           <span class="card-hide">Min</span>
+                        </li>
+                        <li>
+                           <span class="card-hide">Max</span>
+                        </li>
+                     </ul>
+                     <ul class="tog flex-li">
+                        <li>
+                           <span>Free</span>
+                        </li>
+                        <li>
+                           <span>Instant</span>
+                        </li>
+                        <li>
+                           <span>€15</span>
+                        </li>
+                        <li>
+                           <span>€50,000</span>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="pano text-left closed"  id="pano-2">
+                     <div class="heading2">
+                        <h2>Sofortüberweisung</h2>
+                     </div>
+                     <p>
+                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose 
+                     </p>
+                  </div>
+               </div>               
+         
+         
+         
+         
+         
+         
+               <div class="card text-center">
+                  <div class="card-kind text-left">
+                     <div class="card-title">
+                        <div class="card-img"><img src="giro.png" alt="Giro Pay"></div>
+                        <div class="card-accord">
+                           <button class="accordion">Giro Pay</button>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card-arrow"><button class="openbtn"  onclick="togglePanel('pano-3');">▼</button></div>
+                  <div class="card-info Iclosed" id="Ipano-3">
+                     <ul class="tog flex-li card-hide">
+                        <li>
+                           <span class="card-hide">Fee</span>
+                        </li>
+                        <li>
+                           <span class="card-hide">Process Time</span>
+                        </li>
+                        <li>
+                           <span class="card-hide">Min</span>
+                        </li>
+                        <li>
+                           <span class="card-hide">Max</span>
+                        </li>
+                     </ul>
+                     <ul class="tog flex-li">
+                        <li>
+                           <span>Free</span>
+                        </li>
+                        <li>
+                           <span>1-2 Hours</span>
+                        </li>
+                        <li>
+                           <span>€15</span>
+                        </li>
+                        <li>
+                           <span>€25,000</span>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="pano text-left closed"  id="pano-3">
+                     <div class="heading2">
+                        <h2>Giro Pay</h2>
+                     </div>
+                     <p>
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                     </p>
+                  </div>
+               </div>         
+         
+         
+                        <div class="card text-center">
+                  <div class="card-kind text-left">
+                     <div class="card-title">
+                        <div class="card-img"><img src="trustlty.png" alt="Trustlty"></div>
+                        <div class="card-accord">
+                           <button class="accordion">Trustlty</button>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card-arrow"><button class="openbtn"  onclick="togglePanel('pano-4');">▼</button></div>
+                  <div class="card-info Iclosed" id="Ipano-4">
+                     <ul class="tog flex-li card-hide">
+                        <li>
+                           <span class="card-hide">Fee</span>
+                        </li>
+                        <li>
+                           <span class="card-hide">Process Time</span>
+                        </li>
+                        <li>
+                           <span class="card-hide">Min</span>
+                        </li>
+                        <li>
+                           <span class="card-hide">Max</span>
+                        </li>
+                     </ul>
+                     <ul class="tog flex-li">
+                        <li>
+                           <span>Free</span>
+                        </li>
+                        <li>
+                           <span>Instant</span>
+                        </li>
+                        <li>
+                           <span>€15</span>
+                        </li>
+                        <li>
+                           <span>€25,000</span>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="pano text-left closed"  id="pano-4">
+                     <div class="heading2">
+                        <h2>Trustlty</h2>
+                     </div>
+                     <p>
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. 
+                     </p>
+                  </div>
+               </div>   
+         
+                        <div class="card text-center">
+                  <div class="card-kind text-left">
+                     <div class="card-title">
+                        <div class="card-img"><img src="fast-bank-transfer.png" alt="Fast Bank Transfer"></div>
+                        <div class="card-accord">
+                           <button class="accordion">Fast Bank Transfer</button>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card-arrow"><button class="openbtn"  onclick="togglePanel('pano-5');">▼</button></div>
+                  <div class="card-info Iclosed" id="Ipano-5">
+                     <ul class="tog flex-li card-hide">
+                        <li>
+                           <span class="card-hide">Fee</span>
+                        </li>
+                        <li>
+                           <span class="card-hide">Process Time</span>
+                        </li>
+                        <li>
+                           <span class="card-hide">Min</span>
+                        </li>
+                        <li>
+                           <span class="card-hide">Max</span>
+                        </li>
+                     </ul>
+                     <ul class="tog flex-li">
+                        <li>
+                           <span>Free</span>
+                        </li>
+                        <li>
+                           <span>Instant</span>
+                        </li>
+                        <li>
+                           <span>€15</span>
+                        </li>
+                        <li>
+                           <span>€25,000</span>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="pano text-left closed"  id="pano-5">
+                     <div class="heading2">
+                        <h2>Fast Bank Transfer</h2>
+                     </div>
+                     <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 15
+                     </p>
+                  </div>
+               </div>   
+               
+            </div>
+            <!-- WITHDRAWAL -->
+            <div id="withdrawal" class="tab-pane hidden">
+               <div class="card text-center">
+                  <div class="card-kind text-left">
+                     <div class="card-title">
+                        <div class="card-img"><img src=" visa.png" alt="Visa"></div>
+                        <div class="card-accord">
+                           <button class="accordion">Debit & Credit Cards</button>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card-arrow"><button class="openbtn"  onclick="togglePanel('pano-a');">▼</button></div>
+                  <div class="card-info Iclosed" id="Ipano-a">
+                     <ul class="tog flex-li card-hide">
+                        <li>
+                           <span class="card-hide">Fee</span>
+                        </li>
+                        <li>
+                           <span class="card-hide">Process Time</span>
+                        </li>
+                        <li>
+                           <span class="card-hide">Min</span>
+                        </li>
+                        <li>
+                           <span class="card-hide">Max</span>
+                        </li>
+                     </ul>
+                     <ul class="tog flex-li">
+                        <li>
+                           <span>Free</span>
+                        </li>
+                        <li>
+                           <span>5-7 days</span>
+                        </li>
+                        <li>
+                           <span>€10</span>
+                        </li>
+                        <li>
+                           <span>€20,000</span>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="pano text-left closed" id="pano-a">
+                     <div class="heading2">
+                        <h2>Debit & Credit Cards</h2>
+                     </div>
+                     <p>
+                       The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                     </p>
+                  </div>
+               </div>
+               
+        
+        
+        
+                   <div class="card text-center">
+                  <div class="card-kind text-left">
+                     <div class="card-title">
+                        <div class="card-img"><img src=" fast-bank-transfer.png" alt="Fast Bank Transfer"></div>
+                        <div class="card-accord">
+                           <button class="accordion">Fast Bank Transfer</button>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card-arrow"><button class="openbtn"  onclick="togglePanel('pano-c');">▼</button></div>
+                  <div class="card-info Iclosed" id="Ipano-c">
+                     <ul class="tog flex-li card-hide">
+                        <li>
+                           <span class="card-hide">Fee</span>
+                        </li>
+                        <li>
+                           <span class="card-hide">Process Time</span>
+                        </li>
+                        <li>
+                           <span class="card-hide">Min</span>
+                        </li>
+                        <li>
+                           <span class="card-hide">Max</span>
+                        </li>
+                     </ul>
+                     <ul class="tog flex-li">
+                        <li>
+                           <span>Free</span>
+                        </li>
+                        <li>
+                           <span>3-5 days</span>
+                        </li>
+                        <li>
+                           <span>€10</span>
+                        </li>
+                        <li>
+                           <span>€50,000</span>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="pano text-left closed" id="pano-c">
+                     <div class="heading2">
+                        <h2>Fast Bank Transfer</h2>
+                     </div>
+                     <p>
+                       There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. 
+                     </p>
+                  </div>
+               </div>    
+        
+       
+        
+                             <div class="card text-center">
+                  <div class="card-kind text-left">
+                     <div class="card-title">
+                        <div class="card-img"><img src=" skrill.png" alt="SKrill"></div>
+                        <div class="card-accord">
+                           <button class="accordion">Skrill</button>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="card-arrow"><button class="openbtn"  onclick="togglePanel('pano-b');">▼</button></div>
+                  <div class="card-info Iclosed" id="Ipano-b">
+                     <ul class="tog flex-li card-hide">
+                        <li>
+                           <span class="card-hide">Fee</span>
+                        </li>
+                        <li>
+                           <span class="card-hide">Process Time</span>
+                        </li>
+                        <li>
+                           <span class="card-hide">Min</span>
+                        </li>
+                        <li>
+                           <span class="card-hide">Max</span>
+                        </li>
+                     </ul>
+                     <ul class="tog flex-li">
+                        <li>
+                           <span>Free</span>
+                        </li>
+                        <li>
+                           <span>3-5 days</span>
+                        </li>
+                        <li>
+                           <span>€10</span>
+                        </li>
+                        <li>
+                           <span>€1,000</span>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="pano text-left closed" id="pano-b">
+                     <div class="heading2">
+                        <h2>Skrill</h2>
+                     </div>
+                     <p>
+                        The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+                     </p>
+                  </div>
+               </div> 
+               
+            </div>
+         </div>
+      </div>
+      <script src="index.js"></script>
+   </body>
+</html>
+
